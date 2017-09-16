@@ -14,7 +14,7 @@ import java.util.Date;
 public class User implements Serializable  {
     private static final long serialVersionUID = 1L;
 
-	public enum Role { ADMIN, USER }
+	public enum Role { ADMIN, USER, DEV }
     
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

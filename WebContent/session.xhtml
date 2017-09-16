@@ -239,7 +239,7 @@
 			};
 
 			PF('growl').show([facesMessage]);
-			playSound(notificationMessage.chamberEvent.notificationSound);
+			playSound(notificationMessage.eventType.toLowerCase() + ".mp3");
 		}
 
 		function playSound(audioFile) {

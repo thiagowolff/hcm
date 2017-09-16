@@ -29,9 +29,6 @@ public class ChamberEvent implements Serializable {
 	@Column(name = "event_type")
 	private EventType eventType;
 
-	@Column(name = "notification_sound")
-	private String notificationSound;
-
 	public String getDuration() {
 		PeriodFormatter formatter = new PeriodFormatterBuilder()
 				.appendHours()
@@ -55,9 +52,5 @@ public class ChamberEvent implements Serializable {
 
 	public EventType getEventType() {
 		return eventType;
-	}
-
-	public String getNotificationSound() {
-		return notificationSound;
 	}
 }
